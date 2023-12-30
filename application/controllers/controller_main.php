@@ -6,7 +6,7 @@ class Controller_Main extends Controller
         $this->view = new View();
     }
     function action_index(){
-        $data = $this-> model-> get_list();
+        $data= $this->model->get_list();
         $this->view->generate('main_view.php', 'template_view.php', $data);
     }
 

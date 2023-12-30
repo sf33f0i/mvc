@@ -3,4 +3,6 @@
     <input type="text" name = 'value'>
     <input type="submit" name = 'submit'>
 </form>
-<?php ?>
+<?php foreach($data as $value ):?>
+    <p><?=$value['name']?></p>
+<? endforeach; ?>
